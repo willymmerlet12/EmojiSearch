@@ -1,1 +1,117 @@
 /* Other rules */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -1px;
+  font-size: 45px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.container {
+  width: 1024px;
+  height: 100%;
+  margin: auto;
+}
+input {
+  width: 60%;
+  height: 30px;
+  border: none;
+  background-color: #f8efef;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  padding: 6px;
+  margin-bottom: 20px;
+}
+input:focus {
+  outline: none;
+}
+/* MAIN */
+.line {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #fcfbfb;
+  margin: 10px 0;
+  padding-left: 10px;
+  position: relative;
+  font-size: 25px;
+  border-radius: 5px;
+}
+.line:hover {
+  background-color: #f8efef;
+  cursor: pointer;
+}
+.line p {
+  display: none;
+}
+.line p:hover {
+  display: flex;
+}
+p {
+  font-size: 10px;
+  position: absolute;
+  right: 5%;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+@media (max-width: 480px) {
+  .line {
+    height: 38px;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 30px 0;
+  }
+  input {
+    height: 30px;
+    font-size: 12px;
+  }
+  .container {
+    width: auto;
+  }
+}
+@media (max-width: 1054px) {
+  .line {
+    height: 43px;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 30px, 0;
+  }
+  input {
+    height: 35px;
+    font-size: 13px;
+  }
+  .container {
+    width: auto;
+    margin: 0 30px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+}
