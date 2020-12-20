@@ -18,7 +18,10 @@ function App() {
     const value = event.target.value;
     const newResults = [];
     for (let i = 0; i < emojiList.length; i++) {
-      if (emojiList[i].keywords.indexOf(value) !== -1) {
+      if (
+        emojiList[i].keywords.indexOf(value) !== -1 ||
+        emojiList[i].title.indexOf(value) !== -1
+      ) {
         if (newResults.length >= 20) {
           break;
         } else {
